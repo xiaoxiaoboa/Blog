@@ -11,3 +11,219 @@ html.dark {
   margin-right: auto;
   max-width: 1400px;
 }
+
+.paragraph p {
+  margin-top: 14px;
+  color: var(--text-p);
+}
+.paragraph p code {
+  background: var(--code-bg1);
+  border-radius: 4px;
+  margin: 0 4px;
+}
+.paragraph p a {
+  border-bottom: 1px solid;
+}
+.paragraph p img {
+  margin-top: 18px;
+  margin-bottom: 18px;
+  user-select: none;
+}
+.paragraph pre {
+  margin-top: 1rem;
+}
+.paragraph code {
+  overflow-x: auto;
+}
+.paragraph pre code::-webkit-scrollbar {
+  height: 0;
+}
+.paragraph strong {
+  color: var(--text-strong);
+}
+
+.paragraph blockquote {
+  border-left: 4px solid var(--boder-quote);
+  padding: 10px 16px;
+  margin: 20px 0;
+}
+.paragraph blockquote p {
+  margin: 0;
+}
+
+.paragraph h2,
+.paragraph h3,
+.paragraph h4,
+.paragraph h5,
+.paragraph h6 {
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 14px;
+  color: var(--text-h);
+}
+.paragraph h2:hover,
+.paragraph h3:hover,
+.paragraph h4:hover,
+.paragraph h5:hover,
+.paragraph h6:hover {
+  opacity: 1;
+}
+
+.paragraph h2 {
+  font-size: 28px;
+}
+.paragraph h3 {
+  font-size: 24px;
+}
+.paragraph h4 {
+  font-size: 20px;
+}
+
+a {
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+a:hover {
+  opacity: 1;
+}
+
+:root {
+  --text-p: #434343;
+  --text-h: #383838;
+  /* --text-h: #313131; */
+  --boder-quote: #bdbdbd;
+
+  --code-text1: #2a2c2d;
+  --code-bg1: #e6e6e6;
+  --code-text2: #676b79;
+  --code-text3: #676b79;
+  --code-text4: #2a2c2d;
+  --code-text5: #c56200;
+  --code-text6: #c56200;
+  --code-text7: #d92792;
+  --code-text8: #cc5e91;
+  --code-text9: #3787c7;
+  --code-text10: #0d7d6c;
+  --code-text11: #7641bb;
+}
+:root[class="dark"] {
+  --text-p: #b0b3b8;
+  --text-strong: #e3e3e3;
+  --text-h: #e4e4e4;
+  /* --text-h: #e3e3e3; */
+  --boder-quote: #818181;
+
+  --code-text1: #e6e6e6;
+  --code-bg1: #2a2c2d;
+  --code-text2: #bbbbbb;
+  --code-text3: #bbbbbb;
+  --code-text4: #e6e6e6;
+  --code-text5: #ff4b82;
+  --code-text6: #b084eb;
+  --code-text7: #ff75b5;
+  --code-text8: #ff9ac1;
+  --code-text9: #45a9f9;
+  --code-text10: #19f9d8;
+  --code-text11: #ffb86c;
+  --code-text12: #ffb86c;
+}
+
+/* code */
+.hljs {
+  color: var(--code-text1);
+  background: var(--code-bg1);
+  display: block;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.hljs-emphasis {
+  font-style: italic;
+}
+
+.hljs-strong {
+  font-weight: bold;
+}
+
+.hljs-link {
+  text-decoration: underline;
+}
+
+.hljs-comment,
+.hljs-quote {
+  color: var(--code-text2);
+  font-style: italic;
+}
+
+.hljs-params {
+  color: var(--code-text3);
+}
+
+.hljs-punctuation,
+.hljs-attr {
+  color: var(--code-text4);
+}
+
+.hljs-selector-tag,
+.hljs-name,
+.hljs-meta {
+  color: var(--code-text5);
+}
+
+.hljs-operator,
+.hljs-char.escape_ {
+  color: var(--code-text6);
+}
+
+.hljs-keyword,
+.hljs-deletion {
+  color: var(--code-text7);
+}
+
+.hljs-regexp,
+.hljs-selector-pseudo,
+.hljs-selector-attr,
+.hljs-variable.language_ {
+  color: var(--code-text8);
+}
+
+.hljs-subst,
+.hljs-property,
+.hljs-code,
+.hljs-formula,
+.hljs-section,
+.hljs-title.function_ {
+  color: var(--code-text9);
+}
+
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition,
+.hljs-selector-class,
+.hljs-title.class_,
+.hljs-title.class_.inherited__,
+.hljs-meta .hljs-string {
+  color: var(--code-text10);
+}
+
+.hljs-variable,
+.hljs-template-variable,
+.hljs-number,
+.hljs-literal,
+.hljs-type,
+.hljs-link,
+.hljs-built_in,
+.hljs-title,
+.hljs-selector-id,
+.hljs-tag,
+.hljs-doctag,
+.hljs-attribute,
+.hljs-template-tag,
+.hljs-meta .hljs-keyword {
+  color: var(--code-text11);
+}
+
+.hljs-punctuation {
+  color: var(--code-text12);
+}

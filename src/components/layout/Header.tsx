@@ -1,29 +1,38 @@
 import { VscGithubAlt } from "react-icons/vsc"
-import { TbMoonStars } from "react-icons/tb"
+import Link from "next/link"
+
 import ToggleTheme from "../theme/ToggleTheme"
 
 const Header = () => {
   return (
-    <div className="flex h-14">
-      <section className="global-layout flex items-center w-full px-5">
-        <div className="flex items-center justify-between w-full">
+    <header className="flex h-14 mx-auto max-w-[1400px]">
+      <section className=" flex items-center w-full px-5">
+        <div className="flex mt-3 items-center justify-between w-full  dark:text-d-text">
           <ul className="flex list-none gap-5 font-medium text-l-header_text">
-            <li className="cursor-pointer">Home</li>
-            <li className="cursor-pointer">Posts</li>
-            <li className="cursor-pointer">Timeline</li>
-            <li className="cursor-pointer">Projects</li>
+            <Link href="/">
+              <li className="cursor-pointer">Home</li>
+            </Link>
+            <Link href={`/posts`}>
+              <li className="cursor-pointer">Posts</li>
+            </Link>
+            <Link href={"#"}>
+              <li className="cursor-pointer">Timeline</li>
+            </Link>
+            <Link href="/projects">
+              <li className="cursor-pointer">Projects</li>
+            </Link>
           </ul>
           <ul className="flex list-none gap-5 text-l-header_text">
-            <li className="cursor-pointer">
-              <VscGithubAlt size={24} />
+            <li className="cursor-pointer flex items-center opacity-70 hover:opacity-100 transition-opacity duration-300">
+              <VscGithubAlt size={22} />
             </li>
-            <li className="cursor-pointer">
+            <li className="cursor-pointer flex items-center">
               <ToggleTheme />
             </li>
           </ul>
         </div>
       </section>
-    </div>
+    </header>
   )
 }
 

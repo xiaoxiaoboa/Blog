@@ -1,6 +1,5 @@
 import React from "react"
-import { TbMoonStars } from "react-icons/tb"
-import { RxSun } from "react-icons/rx"
+import { CiDark, CiLight } from "react-icons/ci"
 
 type Mode = "light" | "dark"
 
@@ -31,8 +30,11 @@ const ToggleTheme = () => {
   }
 
   return (
-    <div className="flex items-center" onClick={handleToggle}>
-      {mode === "dark" ? <RxSun size={24} /> : <TbMoonStars size={24} />}
+    <div
+      className="flex items-center opacity-70 hover:opacity-100 transition-opacity duration-300"
+      onClick={handleToggle}
+    >
+      {mode === "dark" ? <CiLight size={24} /> : <CiDark size={24} />}
     </div>
   )
 }
