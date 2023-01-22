@@ -1,9 +1,6 @@
 ---
-title: WebMusic
-categories:
-  - - 计算机
-    - React
-date: 2022-10-30 13:03:54
+title: 'WebMusic'
+date: '2022-10-30 13:03:54'
 ---
 
 **本项目只为学习使用！**
@@ -20,13 +17,13 @@ UI部分参考了：[YesPlayMusic](https://github.com/qier222/YesPlayMusic) 感�
 
 ## 技术栈
 
-- **[Vite](https://github.com/vitejs/vite)**
-- **[React](https://github.com/facebook/react)**
-- **[TypeScript](https://github.com/microsoft/TypeScript-Website)**
-- **[React-Router](https://github.com/remix-run/react-router)**
-- **[Recoil](https://github.com/facebookexperimental/Recoil)**
-- **[Styled-Components](https://github.com/styled-components/styled-components)**
-- **[React-Icons](https://github.com/react-icons/react-icons)**
+- [Vite](https://github.com/vitejs/vite)
+- [React](https://github.com/facebook/react)
+- [TypeScript](https://github.com/microsoft/TypeScript-Website)
+- [React-Router](https://github.com/remix-run/react-router)
+- [Recoil](https://github.com/facebookexperimental/Recoil)
+- [Styled-Components](https://github.com/styled-components/styled-components)
+- [React-Icons](https://github.com/react-icons/react-icons)
 
 本项目的组件大部分是自己写的！参考大佬的代码的部分都做了标注！
 
@@ -52,9 +49,7 @@ wrapper为relative，其余三个元素都为absolute
 
 定位已经有了，现在需要先获得鼠标到track左侧的距离，而不是到body的距离 
 
-```
-鼠标到track左侧的距离 = 鼠标到body左侧的距离  - track到body左侧的距离
-```
+> 鼠标到track左侧的距离 = 鼠标到body左侧的距离  - track到body左侧的距离
 
 ##### track到body左侧的距离
 
@@ -224,11 +219,11 @@ consst SliderValueToCurrentTime = Math.floor(SliderValue * (duration / 100))
 
 ##### 音量
 
-```
-MDN:
+
+> MDN:
 HTMLMediaElement.volume 属性可设置媒体播放时的音量。
 取值为 0 到 1 的双精度值。0 为静音，1 为音量最大时的值。
-```
+
 
 取值范围是0-1的双精度值。例：0.25
 

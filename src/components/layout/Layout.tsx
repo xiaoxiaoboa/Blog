@@ -1,8 +1,13 @@
 import React from "react"
 import Head from "next/head"
 import Header from "./Header"
+import Footer from "../Footer/Footer"
 
 const Layout = ({ children }: { children: React.ReactNode }) => {
+  
+
+  
+
   return (
     <div>
       <Head>
@@ -12,9 +17,10 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-      <main className="px-5 mt-12">
+      <main className="px-10 mt-12" >
         <div className=" max-w-[700px] m-auto pb-8">{children}</div>
       </main>
+      <Footer />
     </div>
   )
 }

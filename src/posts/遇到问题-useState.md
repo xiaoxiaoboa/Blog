@@ -1,8 +1,5 @@
 ---
-title: 遇到问题 > useState
-categories:
-  - - 计算机
-    - React
+title: '遇到问题 > useState'
 date: '2022-06-30 14:20:43'
 ---
 

@@ -31,7 +31,7 @@ const ToggleTheme = () => {
 
   return (
     <div
-      className="flex items-center opacity-70 hover:opacity-100 transition-opacity duration-300"
+      className="flex items-center opacity-60 hover:opacity-100 transition-opacity duration-300"
       onClick={handleToggle}
     >
       {mode === "dark" ? <CiLight size={24} /> : <CiDark size={24} />}

@@ -1,8 +1,5 @@
 ---
 title: 'hooks - useEffect'
-categories:
-  - - 计算机
-    - React
 date: '2022-07-14 17:27:46'
 ---
 

@@ -14,6 +14,7 @@ const Posts = ({ allSortedPosts }: { allSortedPosts: SortedPosts[] }) => {
       <Head>
         <title>posts</title>
       </Head>
+      <h1 className="text-3xl font-bold mb-7">Posts</h1>
       {allSortedPosts.map((post, index) => (
         <Link href={`/posts/${post.id}`} key={index}>
           <div className="mb-5 cursor-pointer">

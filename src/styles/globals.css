@@ -12,6 +12,14 @@ html.dark {
   max-width: 1400px;
 }
 
+a {
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+a:hover {
+  opacity: 1;
+}
+
 .paragraph p {
   margin-top: 14px;
   color: var(--text-p);
@@ -20,8 +28,9 @@ html.dark {
   background: var(--code-bg1);
   border-radius: 4px;
   margin: 0 4px;
+  padding: 0  4px;
 }
-.paragraph p a {
+.paragraph a {
   border-bottom: 1px solid;
 }
 .paragraph p img {
@@ -78,19 +87,22 @@ html.dark {
 .paragraph h4 {
   font-size: 20px;
 }
-
-a {
-  opacity: 0.7;
-  transition: opacity 0.3s ease;
+.paragraph h5 {
+  font-size: 18px;
 }
-a:hover {
-  opacity: 1;
+
+.paragraph ul {
+  list-style: disc;
+  list-style-position: inside;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 :root {
   --text-p: #434343;
-  --text-h: #383838;
-  /* --text-h: #313131; */
+  --text-h: #464646;
+  --text-strong: black;
   --boder-quote: #bdbdbd;
 
   --code-text1: #2a2c2d;
@@ -108,9 +120,8 @@ a:hover {
 }
 :root[class="dark"] {
   --text-p: #b0b3b8;
-  --text-strong: #e3e3e3;
-  --text-h: #e4e4e4;
-  /* --text-h: #e3e3e3; */
+  --text-strong: white;
+  --text-h: #dcdcdc;
   --boder-quote: #818181;
 
   --code-text1: #e6e6e6;

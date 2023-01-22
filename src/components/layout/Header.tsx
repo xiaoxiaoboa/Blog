@@ -15,16 +15,15 @@ const Header = () => {
             <Link href={`/posts`}>
               <li className="cursor-pointer">Posts</li>
             </Link>
-            <Link href={"#"}>
-              <li className="cursor-pointer">Timeline</li>
-            </Link>
             <Link href="/projects">
               <li className="cursor-pointer">Projects</li>
             </Link>
           </ul>
           <ul className="flex list-none gap-5 text-l-header_text">
             <li className="cursor-pointer flex items-center opacity-70 hover:opacity-100 transition-opacity duration-300">
-              <VscGithubAlt size={22} />
+              <a href="https://github.com/xiaoxiaoboa" target="_blank">
+                <VscGithubAlt size={22} />
+              </a>
             </li>
             <li className="cursor-pointer flex items-center">
               <ToggleTheme />

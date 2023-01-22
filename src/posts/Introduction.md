@@ -15,5 +15,5 @@ Love Front-End
 
 If you're like me, study together! Fighting!
 
-Email: xiaoxiaoboa@gmail.com
+Email: [xiaoxiaoboa@gmail.com](mailto:xiaoxiaoboa@gmail.com)
 
