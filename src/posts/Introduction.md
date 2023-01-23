@@ -3,6 +3,8 @@ title: 'Hi~'
 date: '2023-01-20 12:20:43'
 ---
 
+Here is XiaoBo's Blog!
+
 I am Zhang Haobo,a senior student
 
 A front-end development learner

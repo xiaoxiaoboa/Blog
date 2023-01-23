@@ -37,7 +37,7 @@ interface ProjectProps {
 const Project = (props: ProjectProps) => {
   const { href, imgSrc, name, desc } = props
   return (
-    <div className="flex flex-1 max-sm:justify-center">
+    <div className="flex flex-1">
       <a href={href} target="_blank">
         <div className="flex items-center gap-2">
           <img src={imgSrc} alt="" />
