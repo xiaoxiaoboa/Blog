@@ -74,10 +74,14 @@ pages目录内`api`目录暂时用不到，没了解
 
 ## MarkDown
 当博客页面布局样式都做好后，文章(`.md`)从哪里获取呢？
+
 创建`/src/posts/`目录，存放文章
+
 创建`/src/lib/posts.ts`文件，用于文章数据
+
 需要获取哪些数据？
-- 获取`src/posts`目录下所有`.md`文件的文件名作为ID；因为要路由到这个文章，则是以文件名为目标的`http://example.com/NextJs介绍` 
+
+- 获取`src/posts`目录下所有`.md`文件的文件名作为ID；因为要路由到这个文章，则是以文件名为目标`http://example.com/NextJs介绍` 
 -  获取`src/posts`目录下所有`.md`文件，只需要`.md`文件的`front-matter`,形成列表
 - 最后则是获取`.md`文件的文章内容
 
