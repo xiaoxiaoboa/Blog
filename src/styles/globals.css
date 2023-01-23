@@ -20,15 +20,19 @@ a:hover {
   opacity: 1;
 }
 
-.paragraph p {
-  margin-top: 14px;
+.paragraph {
   color: var(--text-p);
 }
-.paragraph p code {
+
+.paragraph p {
+  margin-top: 14px;
+  /* color: var(--text-p); */
+}
+.paragraph code:not(.hljs) {
   background: var(--code-bg1);
   border-radius: 4px;
   margin: 0 4px;
-  padding: 0  4px;
+  padding: 0 4px;
 }
 .paragraph a {
   border-bottom: 1px solid;

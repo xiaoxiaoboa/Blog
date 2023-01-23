@@ -28,6 +28,7 @@ export interface SortedData {
   title: string
   date: string
 }
+/* 获取排序后的文章列表 */
 export const getSortedPostsData = () => {
   const filesName = fs.readdirSync(postsDirectory)
 
@@ -52,6 +53,7 @@ export const getSortedPostsData = () => {
   })
 }
 
+/* 获取文章数据 */
 export const getPostData = async (id: string) => {
   const fullPath = path.join(postsDirectory, `${id}.md`)
   const fileContent = fs.readFileSync(fullPath, "utf8")

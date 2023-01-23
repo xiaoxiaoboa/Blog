@@ -1,7 +1,7 @@
 import React from "react"
 import Layout from "@/components/layout/Layout"
-import Image from "next/image"
-import MusicIcon from "public/music.png"
+import musicIcon from "public/music.png"
+import blogIcon from "public/blog.png"
 
 const Projects = () => {
   return (
@@ -10,9 +10,15 @@ const Projects = () => {
       <div className="grid grid-cols-2 max-sm:grid-cols-1 gap-4">
         <Project
           href="https://m.freezxb.cc/"
-          imgSrc={MusicIcon.src}
+          imgSrc={musicIcon.src}
           name="WebMusic App"
           desc="WebMusic, NeteaseCloudMusicApi"
+        />
+        <Project
+          href="https://github.com/xiaoxiaoboa/Blog"
+          imgSrc={blogIcon.src}
+          name="My Blog"
+          desc="使用next.js构建个人博客"
         />
       </div>
     </Layout>
@@ -37,7 +43,7 @@ const Project = (props: ProjectProps) => {
           <img src={imgSrc} alt="" />
           <div className="flex flex-col gap-1">
             <span className="text-xl">{name}</span>
-            <span className="text-sm">{desc}</span>
+            <span className="text-sm opacity-50">{desc}</span>
           </div>
         </div>
       </a>
