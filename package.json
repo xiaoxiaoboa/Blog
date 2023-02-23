@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "postbuild": "next-sitemap"
   },
   "dependencies": {
     "@next/font": "13.1.2",
@@ -16,6 +17,7 @@
     "date-fns": "^2.29.3",
     "gray-matter": "^4.0.3",
     "next": "13.1.2",
+    "next-sitemap": "^3.1.52",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-icons": "^4.7.1",
