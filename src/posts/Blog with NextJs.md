@@ -19,7 +19,7 @@ yarn create next-app --typescript //我使用了这个
 pnpm create next-app --typescript
 ```
 
-![image](https://cdn.staticaly.com/gh/xiaoxiaoboa/blog-pic@main/image.3mvtbke8li20.png)
+![image](https://cdn.statically.io/gh/xiaoxiaoboa/blog-pic@main/image.3mvtbke8li20.png)
 
 ### CSS
 可以使用nextjs内置的`module.css` 也可以使用第三方库，这里我使用了[tailwindcss](https://tailwindcss.com/) 
@@ -58,7 +58,7 @@ module.exports = {
 
 ## 文件结构
 
-![未标题-1](https://cdn.staticaly.com/gh/xiaoxiaoboa/blog-pic@main/未标题-1.3mag4c5parc0.png)
+![未标题-1](https://cdn.statically.io/gh/xiaoxiaoboa/blog-pic@main/未标题-1.3mag4c5parc0.png)
 
 这里有src目录是因为创建项目时选择了使用`src`
 pages目录内`api`目录暂时用不到，没了解
