@@ -5,7 +5,7 @@ import ToggleTheme from "../theme/ToggleTheme"
 
 const Header = () => {
   return (
-    <header className="flex h-14 mx-auto max-w-[1400px]">
+    <header className="flex h-14 mx-auto max-w-[1400px] w-full">
       <section className=" flex items-center w-full px-5">
         <div className="flex mt-3 items-center justify-between w-full  dark:text-d-text">
           <ul className="flex list-none gap-5 font-medium text-l-header_text">
