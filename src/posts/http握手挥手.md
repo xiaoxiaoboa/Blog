@@ -5,7 +5,7 @@ date: '2022-11-04 12:00:16'
 
 ## 三次握手
 
-![http三次握手](https://cdn.statically.io/gh/xiaoxiaoboa/blog-pic@main/http三次握手.ba6hug2syio.svg)
+![http三次握手](https://jsd.cdn.zzko.cn/gh/xiaoxiaoboa/blog-pic@main/http三次握手.ba6hug2syio.svg)
 
 ## 四次挥手
 
@@ -13,4 +13,4 @@ date: '2022-11-04 12:00:16'
 
 可能会是客户端发起，也可能是服务端发起，这里假设客户端发起
 
-![四次挥手](https://cdn.statically.io/gh/xiaoxiaoboa/blog-pic@main/四次挥手.69dxxpxedsg0.svg)
+![四次挥手](https://jsd.cdn.zzko.cn/gh/xiaoxiaoboa/blog-pic@main/四次挥手.69dxxpxedsg0.svg)

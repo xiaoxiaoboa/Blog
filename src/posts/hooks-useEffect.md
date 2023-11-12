@@ -57,7 +57,7 @@ useEffect(() => {
 
 }, [state])
 ```
-![xiaoxin](https://cdn.statically.io/gh/xiaoxiaoboa/blog-pic@main/xiaoxin.58cqmwe5jas0.webp)
+![xiaoxin](https://jsd.cdn.zzko.cn/gh/xiaoxiaoboa/blog-pic@main/xiaoxin.58cqmwe5jas0.webp)
 
 在useEffect的函数中再return一个函数，这个函数会在组件**卸载前**执行
 

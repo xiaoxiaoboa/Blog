@@ -31,7 +31,7 @@ UI部分参考了：[YesPlayMusic](https://github.com/qier222/YesPlayMusic) 感�
 
 ### Slider
 
-![image](https://cdn.statically.io/gh/xiaoxiaoboa/blog-pic@main/image.3vxfnl6dzde0.png) 
+![image](https://jsd.cdn.zzko.cn/gh/xiaoxiaoboa/blog-pic@main/image.3vxfnl6dzde0.png) 
 
 Slider本身由三个div元素组成，外层还有个wrapper
 
@@ -61,8 +61,8 @@ Element对象有个原生API，可以直接获取到**track到body左侧的距�
  //Element.getBoundingClientRect() 方法返回一个 DOMRect 对象，其提供了元素的大小及其相对于视口的位置。
 ```
 
-![image](https://cdn.statically.io/gh/xiaoxiaoboa/blog-pic@main/image.4arp7x270qy0.png)
-![image](https://cdn.statically.io/gh/xiaoxiaoboa/blog-pic@main/image.5lzvmjzjsgg0.png)
+![image](https://jsd.cdn.zzko.cn/gh/xiaoxiaoboa/blog-pic@main/image.4arp7x270qy0.png)
+![image](https://jsd.cdn.zzko.cn/gh/xiaoxiaoboa/blog-pic@main/image.5lzvmjzjsgg0.png)
 上图是它的返回结果，其中x/left就是我们想要的值
 
 ##### 鼠标到body左侧的距离
@@ -95,10 +95,10 @@ Element对象有个原生API，可以直接获取到**track到body左侧的距�
   </script>
 ```
 
-![gif](https://cdn.statically.io/gh/xiaoxiaoboa/blog-pic@main/1.7krmugzto4k0.gif)
+![gif](https://jsd.cdn.zzko.cn/gh/xiaoxiaoboa/blog-pic@main/1.7krmugzto4k0.gif)
 两个重要的值已经拿到，可以通过点击移动元素了。不过还不能拖拽 
 
-![gif](https://cdn.statically.io/gh/xiaoxiaoboa/blog-pic@main/2.588zxyqkds00.gif)
+![gif](https://jsd.cdn.zzko.cn/gh/xiaoxiaoboa/blog-pic@main/2.588zxyqkds00.gif)
 
 #### 拖拽
 
@@ -110,7 +110,7 @@ Element对象有个原生API，可以直接获取到**track到body左侧的距�
 
 鼠标松开，清除事件 
 
-![gif](https://cdn.statically.io/gh/xiaoxiaoboa/blog-pic@main/3.5fpszhlnh6o0.gif)
+![gif](https://jsd.cdn.zzko.cn/gh/xiaoxiaoboa/blog-pic@main/3.5fpszhlnh6o0.gif)
 
 不过最后还是计算一下百分比比较好 
 
@@ -126,7 +126,7 @@ const percentCalculate =(value: number, htmlElement: HTMLDivElement): number => 
 }  
 ```
 
-![gif](https://cdn.statically.io/gh/xiaoxiaoboa/blog-pic@main/4-tuya.3febgohnj800.gif)
+![gif](https://jsd.cdn.zzko.cn/gh/xiaoxiaoboa/blog-pic@main/4-tuya.3febgohnj800.gif)
 
 #### 进度条
 
@@ -213,7 +213,7 @@ consst SliderValueToCurrentTime = Math.floor(SliderValue * (duration / 100))
 
 最后是这样子的： 
 
-![gif](https://cdn.statically.io/gh/xiaoxiaoboa/blog-pic@main/5.3benqn0w6hu0.gif)
+![gif](https://jsd.cdn.zzko.cn/gh/xiaoxiaoboa/blog-pic@main/5.3benqn0w6hu0.gif)
 
 视频同理
 
@@ -235,7 +235,7 @@ HTMLMediaElement.volume 属性可设置媒体播放时的音量。
 
 计算后的值，正好可以赋值给媒体元素
 
-![gif](https://cdn.statically.io/gh/xiaoxiaoboa/blog-pic@main/6.6hm7y8tpah00.gif)
+![gif](https://jsd.cdn.zzko.cn/gh/xiaoxiaoboa/blog-pic@main/6.6hm7y8tpah00.gif)
 
 #### 逻辑
 
@@ -336,7 +336,7 @@ useEffect(() => {
    
    具体实现是这样的：
 
-![gif](https://cdn.statically.io/gh/xiaoxiaoboa/blog-pic@main/8.5lpfvysemr80.gif)
+![gif](https://jsd.cdn.zzko.cn/gh/xiaoxiaoboa/blog-pic@main/8.5lpfvysemr80.gif)
 
 #### Hooks
 
@@ -554,11 +554,11 @@ const Messages = styled.div`
 `
 ```
 
-![gif](https://cdn.statically.io/gh/xiaoxiaoboa/blog-pic@main/9.ggh2q87kk9c.gif)
+![gif](https://jsd.cdn.zzko.cn/gh/xiaoxiaoboa/blog-pic@main/9.ggh2q87kk9c.gif)
 
 ## AudioPlayer
 
-![player播放流程](https://cdn.statically.io/gh/xiaoxiaoboa/blog-pic@main/player播放流程.4kq3xydbg9i0.svg)
+![player播放流程](https://jsd.cdn.zzko.cn/gh/xiaoxiaoboa/blog-pic@main/player播放流程.4kq3xydbg9i0.svg)
 
 ```tsx
 import { FC, ReactElement, useCallback, useEffect, useState, memo } from "react"
@@ -999,7 +999,7 @@ const Title = styled.h1`
 最后增加一个开关来控制主题的变化：
 
 由于gif图片大小限制，只能把浏览器窗口缩小进行录制
-![gif](https://cdn.statically.io/gh/xiaoxiaoboa/blog-pic@main/7.5ez3s7o6nvs.gif)
+![gif](https://jsd.cdn.zzko.cn/gh/xiaoxiaoboa/blog-pic@main/7.5ez3s7o6nvs.gif)
 
 # 路由
 
