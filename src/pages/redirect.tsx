@@ -1,11 +1,33 @@
 import Layout from "@/components/layout/Layout"
 import React from "react"
+import { useRouter } from "next/router"
 
 const Redirect = () => {
+  const router = useRouter()
+  const [isSuccess, setIsSuccess] = React.useState<boolean>(false)
+
+  React.useEffect(() => {
+    const currentPath = router.asPath
+    if (currentPath.includes("callback")) {
+      setIsSuccess(true)
+    } else if (currentPath.includes("error")) {
+      setIsSuccess(false)
+    }
+  }, [])
+
   return (
     <div className="flex flex-col w-screen h-screen justify-center items-center gap-3">
-      <span className="text-2xl">授权完成，登录成功</span>
-      <span className="text-2xl">请直接返回</span>
+      {isSuccess ? (
+        <>
+          <span className="text-2xl">授权完成！</span>
+          <span className="text-2xl">请直接返回</span>
+        </>
+      ) : (
+        <>
+          <span className="text-2xl">授权失败！</span>
+          <span className="text-2xl">请重试</span>
+        </>
+      )}
     </div>
   )
 }
