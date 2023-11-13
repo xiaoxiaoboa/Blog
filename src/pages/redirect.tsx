@@ -8,7 +8,7 @@ const Redirect = () => {
 
   React.useEffect(() => {
     const currentPath = router.asPath
-    if (currentPath.includes("callback")) {
+    if (currentPath.includes("code")) {
       setIsSuccess(true)
     } else if (currentPath.includes("error")) {
       setIsSuccess(false)
