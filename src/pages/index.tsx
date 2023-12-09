@@ -1,27 +1,43 @@
-import Articles from "@/components/Articles/Articles"
+import React from "react"
+import { getSortedPostsData, SortedData } from "@/lib/posts"
 import Layout from "@/components/layout/Layout"
-import { getPostData, getPostsIds, getSortedPostsData } from "@/lib/posts"
+import Link from "next/link"
+import Head from "next/head"
 
-export interface PostsDataTypes {
+interface SortedPosts extends SortedData {
   id: string
-  contentHtml: string
-  title: string
-  date: string
 }
-export default function Home({ postData }: { postData: PostsDataTypes }) {
+
+const Posts = ({ allSortedPosts }: { allSortedPosts: SortedPosts[] }) => {
   return (
     <Layout>
-      <Articles articleData={postData} />
+      <Head>
+        <title>posts</title>
+      </Head>
+      <h1 className="text-3xl font-bold mb-7">Posts</h1>
+      {allSortedPosts.map((post, index) => (
+        <Link href={`/posts/${post.id}`} key={index}>
+          <div className="mb-5 cursor-pointer">
+            <h1 className="text-xl">{post.title}</h1>
+            <div className="text-sm text-l-text-date dark:text-d-text-date">
+              {post.date}
+            </div>
+          </div>
+        </Link>
+      ))}
     </Layout>
   )
 }
 
-export const getStaticProps = async () => {
-  const id = getPostsIds().find(itme => itme.params.id === "Introduction")?.params.id!
-  const postData = await getPostData(id)
+export default Posts
+
+export const getStaticProps = () => {
+  const allSortedPosts = getSortedPostsData()
+  const filteredData = allSortedPosts.filter(data => data.id !== "Introduction")
+
   return {
     props: {
-      postData: JSON.parse(JSON.stringify(postData))
+      allSortedPosts: JSON.parse(JSON.stringify(filteredData))
     }
   }
 }

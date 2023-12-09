@@ -2,12 +2,13 @@ import React from "react"
 import { getPostData, getPostsIds } from "@/lib/posts"
 import Layout from "@/components/layout/Layout"
 import Articles from "@/components/Articles/Articles"
-import { PostsDataTypes } from "@/pages/index"
+import { PostsDataTypes } from "@/types/post"
+
 
 const Post = ({ postData }: { postData: PostsDataTypes }) => {
   return (
     <Layout>
-      <Articles articleData={postData}/>
+      <Articles articleData={postData} />
     </Layout>
   )
 }

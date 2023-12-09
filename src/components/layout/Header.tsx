@@ -9,10 +9,7 @@ const Header = () => {
       <section className=" flex items-center w-full px-5">
         <div className="flex mt-3 items-center justify-between w-full  dark:text-d-text">
           <ul className="flex list-none gap-5 font-medium text-l-header_text">
-            <Link href="/">
-              <li className="cursor-pointer">Home</li>
-            </Link>
-            <Link href={`/posts`}>
+            <Link href={`/`}>
               <li className="cursor-pointer">Posts</li>
             </Link>
             <Link href="/projects">

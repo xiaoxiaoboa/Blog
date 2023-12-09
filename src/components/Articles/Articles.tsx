@@ -1,7 +1,7 @@
 import Head from "next/head"
 import React from "react"
 import DateFormat from "@/components/DateFormat/DateFormat"
-import { PostsDataTypes } from "@/pages/index"
+import { PostsDataTypes } from "@/types/post"
 
 const Articles = ({ articleData }: { articleData: PostsDataTypes }) => {
   const { id, title, date, contentHtml } = articleData
