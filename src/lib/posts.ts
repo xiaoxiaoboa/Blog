@@ -6,6 +6,7 @@ import remarkParase from "remark-parse"
 import remarkRehype from "remark-rehype"
 import rehypeHightLight from "rehype-highlight"
 import rehypeStringify from "rehype-stringify"
+import remarkGfm from "remark-gfm"
 
 const postsDirectory = path.join(process.cwd(), "src/posts")
 
@@ -61,6 +62,7 @@ export const getPostData = async (id: string) => {
   const matterResult = matter(fileContent)
   const processedContent = await unified()
     .use(remarkParase)
+    .use(remarkGfm)
     .use(remarkRehype)
     .use(rehypeHightLight)
     .use(rehypeStringify)

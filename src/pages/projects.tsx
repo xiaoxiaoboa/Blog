@@ -2,6 +2,7 @@ import React from "react"
 import Layout from "@/components/layout/Layout"
 import musicIcon from "public/music.png"
 import blogIcon from "public/blog.png"
+import squirrel from "public/squirrel.webp"
 
 const Projects = () => {
   return (
@@ -19,6 +20,12 @@ const Projects = () => {
           imgSrc={blogIcon.src}
           name="My Blog"
           desc="使用next.js构建个人博客"
+        />
+        <Project
+          href="https://github.com/xiaoxiaoboa/squirrel"
+          imgSrc={squirrel.src}
+          name="Squirrel"
+          desc="个人记账APP"
         />
       </div>
     </Layout>
@@ -38,9 +45,16 @@ const Project = (props: ProjectProps) => {
   const { href, imgSrc, name, desc } = props
   return (
     <div className="flex flex-1">
-      <a href={href} target="_blank">
+      <a
+        href={href}
+        target="_blank"
+      >
         <div className="flex items-center gap-2">
-          <img src={imgSrc} alt="" />
+          <img
+            className="w-16 h-16"
+            src={imgSrc}
+            alt=""
+          />
           <div className="flex flex-col gap-1">
             <span className="text-xl">{name}</span>
             <span className="text-sm opacity-50">{desc}</span>

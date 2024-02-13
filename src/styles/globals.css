@@ -243,3 +243,8 @@ a:hover {
 .hljs-punctuation {
   color: var(--code-text12);
 }
+
+.contains-task-list {
+  list-style: none !important;
+  padding-left: 20px;
+}
